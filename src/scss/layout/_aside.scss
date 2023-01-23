@@ -2,9 +2,13 @@
   @include desktop {
     background-color: $color-aside-bg;
     height: 100vh;
-    width: 760px;
+    width: 860px;
   }
   &__div {
-    background-color: aqua;
+    @include desktop {
+      background-color: $color-header-footer;
+      width: 100%;
+      // height: 230px;
+    }
   }
 }

@@ -35,4 +35,10 @@ body {
     }
   }
 }
-//
+// Columna vertical del aside
+.wrapper-aside {
+  padding: 25px;
+  display: grid;
+  grid-template-rows: repeat(2, 200px);
+  gap: 20px;
+}
