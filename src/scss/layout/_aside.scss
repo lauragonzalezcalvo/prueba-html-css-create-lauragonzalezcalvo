@@ -1,0 +1,10 @@
+.aside {
+  @include desktop {
+    background-color: $color-aside-bg;
+    height: 100vh;
+    width: 760px;
+  }
+  &__div {
+    background-color: aqua;
+  }
+}
