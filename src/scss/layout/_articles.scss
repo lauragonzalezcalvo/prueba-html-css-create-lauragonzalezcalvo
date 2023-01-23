@@ -1,0 +1,22 @@
+.section {
+  padding: 0 12px;
+  &__article {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    &-subtitle {
+      padding-bottom: 7px;
+      font-weight: 700;
+    }
+    &-text2 {
+      //   background-color: rgba(0, 255, 255, 0.309);
+      margin: 0 25px;
+      padding-left: 15px;
+      border-left: 4px solid $color-grey;
+    }
+  }
+  &__separator {
+    height: 2.5px;
+    background-color: $color-grey;
+    border: none;
+  }
+}
