@@ -1,57 +1,6 @@
-// .header {
-//   background-color: $color-header-footer;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   &__section {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     padding: 20px;
-//     &-img {
-//       width: 40px;
-//     }
-//     &-title {
-//       padding-left: 10px;
-//       font-size: 25px;
-//       color: $color-text;
-//       // revisar grosor del title
-//     }
-//   }
-//   &-nav {
-//     background-color: $color-links-bg;
-//     // height: 50px;
-//     // width: 100%;
-//     // display: flex;
-//     // flex-direction: column;
-//     // justify-content: center;
-//     &__ul {
-//       display: grid;
-//       grid-template-columns: repeat(4, 1fr);
-//       width: 100vw;
-//       height: 50px;
-//     }
-//     &__li {
-//       text-align: center;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       &-item {
-//         color: $color-links;
-//         background-color: aqua;
-//       }
-//       // &-item:hover {
-//       //   background-color: $color-links-hover;
-//       // }
-//     }
-//   }
-// }
-// // @include tablet {
-// //   width: 500px;
-// // }
-
 .header {
   background-color: $color-header-footer;
+
   // display: flex;
   // flex-direction: column;
   // align-items: center;
