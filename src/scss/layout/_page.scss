@@ -1,5 +1,10 @@
 body {
   font-family: $font-main;
+  // overflow-y: hidden;
+
+  // @include desktop {
+  //   overflow-y: hidden;
+  // }
 }
 
 //Columna vertical de footer y header
@@ -36,14 +41,27 @@ body {
 
 // Columna vertical de main
 .main {
+  min-height: 68vh;
+  @include tablet {
+    min-height: 42vh;
+  }
   @include desktop {
     background-color: $color-grey;
   }
   &-column {
+    @include tablet {
+      // background-color: $color-bg-main;
+      // margin: 0 60px;
+      // display: flex;
+      // min-height: 80vh;
+      // overflow-y: hidden;
+    }
     @include desktop {
       background-color: $color-bg-main;
       margin: 0 60px;
       display: flex;
+      min-height: 80vh;
+      overflow-y: hidden;
     }
   }
 }
