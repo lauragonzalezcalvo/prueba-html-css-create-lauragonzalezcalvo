@@ -1,10 +1,5 @@
 body {
   font-family: $font-main;
-  // overflow-y: hidden;
-
-  // @include desktop {
-  //   overflow-y: hidden;
-  // }
 }
 
 //Columna vertical de footer y header
@@ -49,13 +44,6 @@ body {
     background-color: $color-grey;
   }
   &-column {
-    @include tablet {
-      // background-color: $color-bg-main;
-      // margin: 0 60px;
-      // display: flex;
-      // min-height: 80vh;
-      // overflow-y: hidden;
-    }
     @include desktop {
       background-color: $color-bg-main;
       margin: 0 60px;
@@ -76,14 +64,9 @@ body {
     gap: 30px;
   }
   @include desktop {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
     width: 309px;
     padding: 24px;
     gap: 15px;
     grid-template-columns: repeat(1, 100%);
-    // grid-template-rows: repeat(1, 130px);
   }
 }

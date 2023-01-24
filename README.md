@@ -1,124 +1,91 @@
-![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
+# Layout test. Laura González Calvo.
 
-# Adalab web starter kit
+<div id="header" align="center">
+  <img width="150"  src="https://images-na.ssl-images-amazon.com/images/S/stores-image-uploads-eu-prod/f/AmazonStores/A1RKKUPIHCS9HS/e2979d1497306e962d8d3ae4439cbd2c.w1200.h1200.jpg">
+</div>
 
-Ahoy! Este es nuestro Starter Kit creado en **node y gulp**. ¿Y qué es un Starter kit? Pues es una **plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas**.
+This exercise consists of developing a **basic and responsive layout**. For the company CREATE ikohs
 
-Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
+## Design.
 
-En el Kit hay 3 tipos de ficheros y carpetas:
+- Logo, typography and palette
 
-- Los ficheros que están sueltos en la raíz del repositorio, como gulpfile.js, package.json... Son la configuración del proyecto y no necesitamos modificarlos.
-- La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
-- Las carpetas `public/` y `docs/`, que son generadas automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de `src/`, los procesa y los genera dentro de `public/` y `docs/`.
+<div id="header" align="center">
+  <img width="260" height="260" src="imagen logo">
+</div>
 
-## Guía de inicio rápido
+```bash
+// fonts
+$font-main: Arial, Helvetica, sans-serif;
 
-> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) para trabajar con este Starter Kit:
+// colors
+$color-header-footer: #ff993e;
+$color-links-bg: #c0392b;
+$color-text: black;
+$color-links: white;
+$color-bg-main: white;
+$color-grey: #c8c5c5;
+$color-aside-bg: #008000;
+$color-media-bg: #874000;
+$color-links-hover: #e74c3c;
+```
 
-### Pasos a seguir cada vez que queremos arrancar un proyecto desde cero:
+AÑADIR IMAGEN Y DESKTOP DE CREATE
 
-1. **Crea tu propio repositorio.**
-1. Descarga este **Starter kit desde GitHub**.
-   - No recomendamos que clones este repo ya que no podrás añadir commits.
-1. **Copia todos los ficheros** de este Starter kit en la carpeta raíz de tu repositorio.
-   - Recuerda que debes copiar **también los ficheros ocultos**.
-   - Si has decidido clonar este repo, no debes copiar la carpeta `.git`. Si lo haces estarás machacando tu propio repositorio.
-1. **Abre una terminal** en la carpeta raíz de tu repositorio.
-1. **Instala las dependencias** locales ejecutando en la terminal el comando:
+## PROCESS
+
+- Drawing a sketch
+  PONER IMAGEN BOCETO
+- Realization of the **HTML**. Taking into account the BEM methodology, variables...
+- Realization of the **CSS**. Using CSS features like Grid, Flexbox, hovers, animations, mobile first..
+- Thanks to **SASS**, I have been able to work with "variables" to define the colors of the page; "mixins" to define the tablet and computer version. "Partials" to work with different files
+
+# FINAL RESULT
+
+AÑADIR IMAGEN Y DESKTOP DE CREATE y tablet
+
+- Mobile, below 500px
+- Tablet, from 768px to 1200px
+- Desktop, starting at 1200px
+
+## Technologies:
+
+- **HTML5**.
+- **CSS**.
+- **GitHub (branches,git...)**.
+- Task automation: **Gulp**.
+- Syntactically Awesome Stylesheet: **Sass**.
+- Gestión de **eventos** en el navegador.
+- **JSON**.
+- **NodeJS**.
+- **[Adalab - Web starter kit](https://github.com/Adalab/Adalab-web-starter-kit)**.
+
+### Steps to follow every time you want to start a project from scratch:
+
+- Install NodeJS if you don't have it. It is necessary.
+- Create your own repository.
+- Download the Starter kit from **[GitHub](https://github.com/Adalab/Adalab-web-starter-kit)**.
+- Copies all the files in the root folder of the repository.
+- Open a terminal and install the local dependencies by executing in the command terminal:
 
 ```bash
 npm install
 ```
 
-### Pasos para arrancar el proyecto:
+### Steps to start the project:
 
-Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. **El proyecto hay que arrancarlo cada vez que te pongas a programar.** Para ello ejecuta el comando:
+**The project must be started every time we start programming**, for this we will execute the command:
 
 ```bash
 npm start
 ```
 
-Este comando:
+This command:
 
-- **Abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
-- También **observa** todos los ficheros que hay dentro de la carpeta `src/`, para que cada vez que modifiques un fichero **refresca tu página en Chrome**.
-- También **procesa los ficheros** HTML, SASS / CSS y JS y los **genera y guarda en la carpeta `public/`**. Por ejemplo:
-   - Convierte los ficheros SASS en CSS.
-   - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
+- **Opens a Chrome window and displays your web page**, just like the VS Code Live Server (Go live) plugin does.
+- It also **watches** all the files inside the `src/` folder, so that every time you modify a file it **refreshes your page in Chrome**.
+- It also **processes the HTML, SASS / CSS and JS files** and **generates and saves them in the `public/`** folder. For example:
+  - Converts SASS files to CSS.
+  - It combines the different HTML files and groups them into one or more HTML files.
 
-Después de ejecutar `npm start` ya puedes empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
-
-### Pasos para publicar el proyecto en GitHub Pages:
-
-Para generar tu página para producción ejecuta el comando:
-
-```bash
-npm run docs
-```
-
-Y a continuación:
-
-1. Sube a tu repo la carpeta `docs/` que se te acaba de generar.
-1. Entra en la pestaña `settings` de tu repo.
-1. Y en el apartado de GitHub Pages activa la opción **master branch /docs folder**.
-1. Y ya estaría!!!
-
-Además, los comandos:
-
-```bash
-npm run push-docs
-```
-o
-
-```bash
-npm run deploy
-```
-
-son un atajo que nos genera la versión de producción y hace push de la carpeta `docs/` del tirón. Te recomendamos ver el fichero `package.json` para aprender cómo funciona.
-
-## Flujo de archivos con Gulp
-
-Estas tareas de Gulp producen el siguiente flujo de archivos:
-
-![Gulp flow](./gulp-flow.png)
-
-## `gulpfile.js` y `config.json`
-
-Nuestro **gulpfile.js** usa el fichero `config.json` de configuración con las rutas de los archivos a generar / observar.
-
-De esta manera separarmos las acciones que están en `gulpfile.js` de la configuración de las acciones que están en `config.json`.
-
-## Estructura de carpetas
-
-La estructura de carpetas tiene esta pinta:
-
-```
-src
- ├─ api // los ficheros de esta carpeta se copian en public/api/
- |  └─ data.json
- ├─ images
- |  └─ logo.jpg
- ├─ js // los ficheros de esta carpeta se concatenan en el fichero main.js y este se guarda en public/main.js
- |  ├─ main.js
- |  └─ events.js
- ├─ scss
- |  ├─ components
- |  ├─ core
- |  ├─ layout
- |  └─ pages
- └─ html
-    └─ partials
-```
-
-> **NOTA:** Los partials de HTML y SASS del proyecto son orientativos. Te recomendamos usar los que quieras, y borrar los que no uses.
-
-## Vídeotutoriales del Starter kit
-
-- [Qué es, trabajar con la versión de desarrollo y rutas relativas](https://www.youtube.com/watch?v=XwvhXvBijos)
-- [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
-- [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
-
-## Falta algo?
-
-Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de las issues o si te animas a mejorarlo mándanos un PR :)
+After executing `npm start` we can start editing all the files that are inside the `src/` folder and programming comfortably.

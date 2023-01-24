@@ -4,7 +4,6 @@
   background-color: $color-header-footer;
   padding-top: 15px;
   padding-bottom: 15px;
-  // height: 20vh;
 
   &-nav {
     background-color: $color-links-bg;
@@ -24,8 +23,8 @@
       }
     }
     &__li:hover {
-      // text-align: center;
       background-color: $color-links-hover;
+      transition: background-color 1s ease-out 10ms;
     }
   }
   &-media {
@@ -43,6 +42,7 @@
     &__li:hover {
       text-align: center;
       background-color: $color-links-hover;
+      transition: background-color 1s ease-out 10ms;
     }
     &__menu {
       display: grid;
